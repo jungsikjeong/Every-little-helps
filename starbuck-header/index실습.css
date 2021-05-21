@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+header {
+  border-top: 2px solid #333;
+  background-color: #f6f5ef;
+}
+
+.header-wrapper {
+  width: 54.5rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-wrapper h1 {
+  padding: 1.1rem 0 1.2rem;
+}
+
+.nav-innerwrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top {
+  width: 54.5rem;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: 0;
+  right: 2.25rem;
+}
+.header-wrapper .nav-innerwrap .nav-header_top > ul > li {
+  margin: 1rem 0 1.8rem;
+  position: relative;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top > ul > li > a {
+  padding: 0 0.75rem;
+  font-size: 0.7rem;
+  color: #333;
+  line-height: 100%;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top ul li ~ li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0.6rem;
+  background: #e5e5e5;
+  transform: translateY(-25%);
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top ul li:last-child a:after {
+  display: none;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top > ul > li:last-child a {
+  display: block;
+  text-align: center;
+  line-height: 1.7rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  border: 1px solid #ccc;
+  color: transparent;
+  font-size: 0;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_top > ul > li:last-child a:before {
+  content: '\e97a';
+  font-family: 'xeicon';
+  font-size: 1.2rem;
+  color: black;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_bottom > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-wrapper .nav-innerwrap .nav-header_bottom > ul > li {
+  /* margin: 0 0 1.8rem; */
+}
+
+.header-wrapper .nav-innerwrap .nav-header_bottom > ul > li > a {
+  display: block;
+  padding: 0.75rem 1.25rem 0;
+  height: 2.6rem;
+  font-size: 0.7rem;
+  color: #333;
+  line-height: 100%;
+}
